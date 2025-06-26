@@ -1,50 +1,3 @@
-const projects = [
-    {
-        title: "FitBill - Gym Management System",
-        description: `A comprehensive cross-platform solution designed for modern gym businesses...`,
-        highlights: [
-            "Automated membership renewal alerts",
-            "Daily check-in/check-out tracking",
-            "Financial dashboards",
-            "Supports hundreds of daily active users"
-        ],
-        technologies: ["React Native", "Express.js", "Prisma"]
-    },
-    {
-        title: "Student Attendance Tracking System",
-        description: `A real-time attendance tracker using AWS services and WebSocket technology...`,
-        highlights: [
-            "Real-time attendance sync",
-            "Facial recognition support",
-            "Low-latency WebSocket updates",
-            "AWS Lambda for serverless logic"
-        ],
-        technologies: ["AWS Lambda", "Python", "WebSocket"]
-    },
-    {
-        title: "FitBill - Gym Management System",
-        description: `A comprehensive cross-platform solution designed for modern gym businesses...`,
-        highlights: [
-            "Automated membership renewal alerts",
-            "Daily check-in/check-out tracking",
-            "Financial dashboards",
-            "Supports hundreds of daily active users"
-        ],
-        technologies: ["React Native", "Express.js", "Prisma"]
-    },
-    {
-        title: "Student Attendance Tracking System",
-        description: `A real-time attendance tracker using AWS services and WebSocket technology...`,
-        highlights: [
-            "Real-time attendance sync",
-            "Facial recognition support",
-            "Low-latency WebSocket updates",
-            "AWS Lambda for serverless logic"
-        ],
-        technologies: ["AWS Lambda", "Python", "WebSocket"]
-    }
-    // Add more project data here...
-];
 
 const projectItems = document.querySelectorAll(".project-item");
 const detailTitle = document.querySelector("#project-title");
@@ -287,50 +240,70 @@ function selectProject(idx) {
 
 document.addEventListener('DOMContentLoaded', function () {
     renderProjects();
-    selectProject(0); // Show first project by default
+    selectProject(0);
 });
 const projectsData = [
-    {
-      id: 1,
-      title: 'Rise Works',
-      description: 'Corporate website and productivity dashboard for a leading tech company.',
-      image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      categories: ['websites', 'design'],
-      techStack: ['React', 'TypeScript', 'TailwindCSS', 'Node.js', 'Express'],
-      githubUrl: 'https://github.com/yourusername/rise-works',
-      liveUrl: 'https://example.com/rise-works',
-    },
-    {
-      id: 2,
-      title: 'Neuform Digital',
-      description: 'Innovative digital products and services platform with cutting-edge UI design.',
-      image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      categories: ['websites', 'ui/ux', 'design'],
-      techStack: ['Next.js', 'TypeScript', 'SASS', 'GraphQL', 'MongoDB'],
-      githubUrl: 'https://github.com/yourusername/neuform-digital',
-      liveUrl: 'https://example.com/neuform',
-    },
-    {
-      id: 3,
-      title: 'Wavelength App',
-      description: 'Music discovery mobile application with personalized recommendations.',
-      image: 'https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      categories: ['mobile', 'ui/ux'],
-      techStack: ['React Native', 'Redux', 'Node.js', 'Firebase', 'AWS'],
-      githubUrl: 'https://github.com/yourusername/wavelength-app',
-      liveUrl: 'https://example.com/wavelength',
-    },
-    {
-      id: 4,
-      title: 'Architect Portfolio',
-      description: 'Minimalist portfolio website for an award-winning architecture firm.',
-      image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      categories: ['websites', 'design'],
-      techStack: ['Vue', 'JavaScript', 'TailwindCSS', 'Firebase'],
-      githubUrl: 'https://github.com/yourusername/architect-portfolio',
-      liveUrl: 'https://example.com/architect-portfolio',
-    },
-  ];
+  {
+    id: 1,
+    title: 'Fav Image Share',
+    description:
+      'A social image-sharing platform where users can upload photos, write captions, comment, follow others, and discover posts through smart hashtag search.',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    categories: ['web app', 'AI', 'social'],
+    techStack: [
+      'React',
+      'Node.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Cloudinary',
+      'Gemini API',
+      'JWT'
+    ],
+    githubUrl: 'https://github.com/Abhinay486/fav-image-share-main',
+    liveUrl: 'https://fav-image-share-main.vercel.app',
+  },
+  {
+    id: 2,
+    title: 'Medical Image Analyzer',
+    description:
+      'AI-powered medical image analyzer providing diagnoses, causes, treatment plans, and precautions from user-uploaded images with multi-image comparison and user history tracking.',
+    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    categories: ['web app', 'AI', 'medical'],
+    techStack: [
+      'React',
+      'Node.js',
+      'Express',
+      'Tailwind CSS',
+      'Gemini API',
+      'Clerk Auth'
+    ],
+    githubUrl: 'https://github.com/Abhinay486/hacktblkn',
+    liveUrl: 'https://hacktblkn.vercel.app',
+  },
+  {
+    id: 3,
+    title: 'Portfolio Website',
+    description:
+      'Personal portfolio built to showcase skills, certifications, and projects using a clean, component-based architecture and optimized for SEO and performance.',
+    image: 'https://images.pexels.com/photos/3584999/pexels-photo-3584999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    categories: ['portfolio', 'websites', 'design'],
+    techStack: ['React', 'Tailwind CSS', 'Git', 'Netlify'],
+    githubUrl: 'https://github.com/Abhinay486/Portfolio',
+    liveUrl: 'https://portfolio-seven-peach-18.vercel.app',
+  },
+  {
+    id: 4,
+    title: 'Notes Sphere',
+    description:
+      'Personal portfolio built to showcase skills, certifications, and projects using a clean, component-based architecture and optimized for SEO and performance.',
+    image: 'https://res.cloudinary.com/dlfy95xyl/image/upload/f_auto,q_auto/v1750901568/pins/y8a1lrpli8hmz8xxxp0l.png',
+    categories: ['portfolio', 'websites', 'design'],
+    techStack: ['React', 'Tailwind CSS', 'Git', 'Netlify'],
+    githubUrl: 'https://github.com/Abhinay486/noteai',
+    liveUrl: 'https://notes1ai.vercel.app',
+  },
+];
+
   
   const techColors = {
     'React': 'bg-blue-900/50 text-blue-300 border-blue-600/50',
