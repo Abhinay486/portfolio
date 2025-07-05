@@ -1,0 +1,48 @@
+/* Hero.css */
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Mobile first: stack content and avatar */
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 70vh; /* Give it some height */
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+.hero-avatar-container {
+  margin-top: 30px; /* Space between text and avatar on mobile */
+}
+
+/* Medium screens and up (md breakpoint, e.g., 768px) */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row; /* Side-by-side layout */
+    text-align: left; /* Align text to the left for content */
+    justify-content: space-around; /* Space out content and avatar */
+  }
+
+  .hero-content {
+    flex-basis: 60%; /* Give more space to content */
+    padding-right: 30px; /* Space between content and avatar */
+  }
+
+  .hero-avatar-container {
+    flex-basis: 40%; /* Space for avatar */
+    margin-top: 0; /* Reset mobile margin */
+    display: flex;
+    justify-content: center; /* Center avatar in its container */
+    align-items: center;
+  }
+}

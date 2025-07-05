@@ -1,0 +1,24 @@
+/* Avatar.css */
+.hero-avatar {
+  /* Base styles are applied inline in Avatar.jsx for dynamic properties like transform */
+  /* This class is primarily for responsive visibility */
+  display: none; /* Hidden by default on small screens */
+}
+
+/* Medium screens and up (md breakpoint, e.g., 768px) */
+@media (min-width: 768px) {
+  .hero-avatar {
+    display: flex; /* Show the avatar */
+    /* Ensure other flex properties from inline styles are respected if needed,
+       but display:flex is the main one to override here for visibility.
+       The inline styles in Avatar.jsx already use flex for layout within the orb.
+    */
+  }
+}
+
+/* Optional: if you want to ensure the pupils are perfectly centered in eyes via CSS rather than JS calculations only */
+.eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
